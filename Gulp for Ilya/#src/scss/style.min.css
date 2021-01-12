@@ -1,0 +1,403 @@
+p {
+  font-size: 18px;
+  color: #555
+}
+h1 {
+  font-weight: 800;
+  font-size: 31px;
+  text-transform: uppercase
+}
+h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase
+}
+.black-separator {
+  margin-top: 50px;
+  height: 200px;
+  background: #000
+}
+header .navbar {
+  background: 0 0!important
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+  color: #000
+}
+header .navbar .navbar-collapse .navbar-nav .active {
+  position: relative
+}
+header .navbar .navbar-collapse .navbar-nav .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  top: 80%
+}
+header .navbar .navbar-collapse .navbar-nav .active .nav-link {
+  color: red
+}
+header .navbar form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #000
+}
+header .navbar form input {
+  otline: none!important;
+  background: 0 0;
+  border: none
+}
+header .navbar form input:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+header .navbar form button {
+  border: none
+}
+header .navbar form button:focus {
+  background: 0 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+header .navbar form button:hover {
+  background: 0 0;
+  border: none
+}
+header .navbar form button img {
+  opacity: .5;
+  width: 20px
+}
+@media (max-width:1200px) {
+  .header .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 15px!important
+  }
+}
+@media (max-width:991px) {
+  .header .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 18px!important
+  }
+}
+.banner {
+  margin-top: 50px
+}
+.banner img {
+  margin-bottom: 10px
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: 700
+}
+.banner h1 a {
+  text-decoration: none;
+  color: #000
+}
+.banner h1 span {
+  color: red
+}
+.banner p {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px
+}
+.banner .call-telephone__title {
+  color: red
+}
+.banner .call-telephone__number {
+  font-weight: 700
+}
+@media (max-width:1200px) {
+  .banner h1 {
+    margin-bottom: 25px
+  }
+}
+@media (max-width:767px) {
+  .banner p {
+    font-size: 16px
+  }
+}
+.price .container {
+  background: #fff;
+  margin-top: -100px;
+  padding: 50px
+}
+.price .container .content {
+  border: 3px dotted #777
+}
+.price .container .content .title {
+  margin: 30px 0
+}
+.price .container .content .title img {
+  max-width: 70px;
+  width: 100%
+}
+.price .container .content .selected-style {
+  margin-bottom: 50px
+}
+.price .container .content .selected-style .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 3px dotted #777;
+  margin: 5px;
+  height: 150px;
+  min-width: 280px;
+  opacity: .5;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s
+}
+.price .container .content .selected-style .item:hover {
+  opacity: .7
+}
+.price .container .content .selected-style .item span {
+  margin-top: -20px;
+  line-height: 0;
+  font-size: 100px;
+  font-weight: 300
+}
+.price .container .content .shopping-list .title {
+  position: relative;
+  margin: 0
+}
+.price .container .content .shopping-list .title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  top: 90%
+}
+.price .container .content .shopping-list button {
+  position: absolute;
+  right: 0;
+  background: red;
+  width: 20px;
+  height: 25px;
+  border-radius: 0
+}
+.price .container .content .shopping-list button:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+.price .container .content .shopping-list button span {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: -7px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s
+}
+.price .container .content .shopping-list button span::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  top: -5px;
+  left: 0
+}
+.price .container .content .shopping-list button span::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  top: 5px;
+  left: 0
+}
+.price .container .content .shopping-list button[aria-expanded=true] span {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  margin-left: -7px;
+  -webkit-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  transform: rotate(-270deg)
+}
+.price .container .content .shopping-list button[aria-expanded=true] span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+  top: -3px;
+  left: 6px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg)
+}
+.price .container .content .shopping-list button[aria-expanded=true] span::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+  top: 3px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+.price .container .content .shopping-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s
+}
+.price .container .content .shopping-list .item:hover {
+  background: #f0f0f0
+}
+.price .container .content .shopping-list .item input {
+  text-align: center;
+  max-width: 100px;
+  padding: 5px
+}
+.price .container .content .result {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 70px
+}
+.price .container .content .result::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  top: -28px
+}
+.price .container .content .result span {
+  font-size: 20px;
+  font-weight: 700
+}
+.price .container .content .result .sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: green;
+  border: 3px solid green;
+  max-width: 290px;
+  padding: 5px
+}
+.price .container .content .result .sum h1 {
+  font-weight: 500;
+  text-transform: lowercase
+}
+@media (max-width:991px) {
+  .price .container .content .shopping-list button {
+    margin: 0;
+    margin-top: -30px
+  }
+}
+@media (max-width:769px) {
+  .price .container {
+    padding: 10px
+  }
+  .price .container .content {
+    border: none
+  }
+  .price .container .content .title:child {
+    padding: 0
+  }
+  .price .container .content .title img {
+    margin: 0 auto
+  }
+  .price .container .content .result .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center
+  }
+  .price .container .content .selected-style .item {
+    min-width: 100px;
+    width: 100%
+  }
+  .price .container .content .shopping-list button {
+    margin: 0;
+    margin-top: -30px
+  }
+  .price .container .content .shopping-list h3 {
+    font-size: 12px
+  }
+}
+.communication {
+  position: relative;
+  z-index: 1
+}
+.communication a {
+  position: absolute;
+  top: -34px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s
+}
+.communication a:hover {
+  top: -40px
+}
+.communication .facebook {
+  right: 150px
+}
+.communication .instagram {
+  right: 100px
+}
+.communication .vk {
+  right: 50px
+}
+.communication img {
+  width: 40px
+}
+.footer {
+  position: relative;
+  background: #000;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  z-index: 100
+}
+.footer h5 {
+  color: #fff
+}
+.footer p {
+  font-size: 16px;
+  color: #fff
+}
+.footer a {
+  color: #fff
+}
